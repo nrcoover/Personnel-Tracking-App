@@ -45,7 +45,7 @@ namespace PersonnelTracking
             this.lblDepartmentSelect.Location = new System.Drawing.Point(43, 81);
             this.lblDepartmentSelect.Name = "lblDepartmentSelect";
             this.lblDepartmentSelect.Size = new System.Drawing.Size(98, 20);
-            this.lblDepartmentSelect.TabIndex = 4;
+            this.lblDepartmentSelect.TabIndex = 0;
             this.lblDepartmentSelect.Text = "Department";
             // 
             // txtPosition
@@ -55,7 +55,7 @@ namespace PersonnelTracking
             this.txtPosition.Location = new System.Drawing.Point(155, 42);
             this.txtPosition.Name = "txtPosition";
             this.txtPosition.Size = new System.Drawing.Size(217, 26);
-            this.txtPosition.TabIndex = 5;
+            this.txtPosition.TabIndex = 0;
             // 
             // lblPosition
             // 
@@ -66,7 +66,7 @@ namespace PersonnelTracking
             this.lblPosition.Location = new System.Drawing.Point(43, 45);
             this.lblPosition.Name = "lblPosition";
             this.lblPosition.Size = new System.Drawing.Size(67, 20);
-            this.lblPosition.TabIndex = 6;
+            this.lblPosition.TabIndex = 0;
             this.lblPosition.Text = "Position";
             // 
             // cmbDepartmentSelect
@@ -76,7 +76,7 @@ namespace PersonnelTracking
             this.cmbDepartmentSelect.Location = new System.Drawing.Point(155, 78);
             this.cmbDepartmentSelect.Name = "cmbDepartmentSelect";
             this.cmbDepartmentSelect.Size = new System.Drawing.Size(217, 28);
-            this.cmbDepartmentSelect.TabIndex = 10;
+            this.cmbDepartmentSelect.TabIndex = 1;
             // 
             // btnClosePosition
             // 
@@ -86,7 +86,7 @@ namespace PersonnelTracking
             this.btnClosePosition.Location = new System.Drawing.Point(222, 126);
             this.btnClosePosition.Name = "btnClosePosition";
             this.btnClosePosition.Size = new System.Drawing.Size(150, 49);
-            this.btnClosePosition.TabIndex = 12;
+            this.btnClosePosition.TabIndex = 3;
             this.btnClosePosition.Text = "Close";
             this.btnClosePosition.UseVisualStyleBackColor = false;
             this.btnClosePosition.Click += new System.EventHandler(this.btnClosePosition_Click);
@@ -99,7 +99,7 @@ namespace PersonnelTracking
             this.btnUpdatePosition.Location = new System.Drawing.Point(47, 126);
             this.btnUpdatePosition.Name = "btnUpdatePosition";
             this.btnUpdatePosition.Size = new System.Drawing.Size(150, 49);
-            this.btnUpdatePosition.TabIndex = 11;
+            this.btnUpdatePosition.TabIndex = 2;
             this.btnUpdatePosition.Text = "Update";
             this.btnUpdatePosition.UseVisualStyleBackColor = false;
             // 
