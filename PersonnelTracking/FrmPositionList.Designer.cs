@@ -31,7 +31,7 @@ namespace PersonnelTracking
         {
             this.pnlPositionList = new System.Windows.Forms.Panel();
             this.btnDeletePositionList = new System.Windows.Forms.Button();
-            this.btnCloseDepartmentList = new System.Windows.Forms.Button();
+            this.btnClosePositionList = new System.Windows.Forms.Button();
             this.btnUpdatePositionList = new System.Windows.Forms.Button();
             this.btnAddPositionList = new System.Windows.Forms.Button();
             this.dgvPositionList = new System.Windows.Forms.DataGridView();
@@ -43,7 +43,7 @@ namespace PersonnelTracking
             // 
             this.pnlPositionList.BackColor = System.Drawing.Color.LightGray;
             this.pnlPositionList.Controls.Add(this.btnDeletePositionList);
-            this.pnlPositionList.Controls.Add(this.btnCloseDepartmentList);
+            this.pnlPositionList.Controls.Add(this.btnClosePositionList);
             this.pnlPositionList.Controls.Add(this.btnUpdatePositionList);
             this.pnlPositionList.Controls.Add(this.btnAddPositionList);
             this.pnlPositionList.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -64,18 +64,18 @@ namespace PersonnelTracking
             this.btnDeletePositionList.Text = "DELETE";
             this.btnDeletePositionList.UseVisualStyleBackColor = false;
             // 
-            // btnCloseDepartmentList
+            // btnClosePositionList
             // 
-            this.btnCloseDepartmentList.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnCloseDepartmentList.Font = new System.Drawing.Font("Lato", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCloseDepartmentList.ForeColor = System.Drawing.Color.DimGray;
-            this.btnCloseDepartmentList.Location = new System.Drawing.Point(510, 27);
-            this.btnCloseDepartmentList.Name = "btnCloseDepartmentList";
-            this.btnCloseDepartmentList.Size = new System.Drawing.Size(150, 70);
-            this.btnCloseDepartmentList.TabIndex = 3;
-            this.btnCloseDepartmentList.Text = "Close";
-            this.btnCloseDepartmentList.UseVisualStyleBackColor = false;
-            this.btnCloseDepartmentList.Click += new System.EventHandler(this.btnCloseDepartmentList_Click);
+            this.btnClosePositionList.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnClosePositionList.Font = new System.Drawing.Font("Lato", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClosePositionList.ForeColor = System.Drawing.Color.DimGray;
+            this.btnClosePositionList.Location = new System.Drawing.Point(510, 27);
+            this.btnClosePositionList.Name = "btnClosePositionList";
+            this.btnClosePositionList.Size = new System.Drawing.Size(150, 70);
+            this.btnClosePositionList.TabIndex = 3;
+            this.btnClosePositionList.Text = "Close";
+            this.btnClosePositionList.UseVisualStyleBackColor = false;
+            this.btnClosePositionList.Click += new System.EventHandler(this.btnCloseDepartmentList_Click);
             // 
             // btnUpdatePositionList
             // 
@@ -130,7 +130,7 @@ namespace PersonnelTracking
 
         private System.Windows.Forms.Panel pnlPositionList;
         private System.Windows.Forms.Button btnDeletePositionList;
-        private System.Windows.Forms.Button btnCloseDepartmentList;
+        private System.Windows.Forms.Button btnClosePositionList;
         private System.Windows.Forms.Button btnUpdatePositionList;
         private System.Windows.Forms.Button btnAddPositionList;
         private System.Windows.Forms.DataGridView dgvPositionList;
