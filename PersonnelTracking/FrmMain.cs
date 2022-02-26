@@ -16,6 +16,58 @@ namespace PersonnelTracking
         {
             InitializeComponent();
         }
+        private void btnEmployee_Click(object sender, EventArgs e)
+        {
+            FrmEmployeeList frm = new FrmEmployeeList();
+            this.Hide();
+            frm.ShowDialog();
+            this.Visible = true;
+        }
+
+        private void btnTasks_Click(object sender, EventArgs e)
+        {
+            FrmTaskList frm = new FrmTaskList();
+            this.Hide();
+            frm.ShowDialog();
+            this.Visible = true;
+        }
+
+        private void btnPermissions_Click(object sender, EventArgs e)
+        {
+            FrmPermissionList frm = new FrmPermissionList();
+            this.Hide();
+            frm.ShowDialog();
+            this.Visible = true;
+        }
+
+        private void btnPosition_Click(object sender, EventArgs e)
+        {
+            FrmPositionList frm = new FrmPositionList();
+            this.Hide();
+            frm.ShowDialog();
+            this.Visible = true;
+        }
+
+        private void btnDepartment_Click(object sender, EventArgs e)
+        {
+            FrmDepartmentList frm = new FrmDepartmentList();
+            this.Hide();
+            frm.ShowDialog();
+            this.Visible = true;
+        }
+
+        private void btnSalary_Click(object sender, EventArgs e)
+        {
+            FrmSalaryList frm = new FrmSalaryList();
+            this.Hide();
+            frm.ShowDialog();
+            this.Visible = true;
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            
+        }
 
         private void btnExit_Click(object sender, EventArgs e)
         {
