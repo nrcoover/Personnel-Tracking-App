@@ -41,7 +41,7 @@ namespace PersonnelTracking
             this.pnlTaskListBottom = new System.Windows.Forms.Panel();
             this.btnApproveTaskList = new System.Windows.Forms.Button();
             this.btnDeleteTaskList = new System.Windows.Forms.Button();
-            this.btnCloseEmployeeList = new System.Windows.Forms.Button();
+            this.btnCloseTaskList = new System.Windows.Forms.Button();
             this.btnUpdateTaskList = new System.Windows.Forms.Button();
             this.btnAddTaskList = new System.Windows.Forms.Button();
             this.dgvTaskList = new System.Windows.Forms.DataGridView();
@@ -185,7 +185,7 @@ namespace PersonnelTracking
             this.pnlTaskListBottom.BackColor = System.Drawing.Color.LightGray;
             this.pnlTaskListBottom.Controls.Add(this.btnApproveTaskList);
             this.pnlTaskListBottom.Controls.Add(this.btnDeleteTaskList);
-            this.pnlTaskListBottom.Controls.Add(this.btnCloseEmployeeList);
+            this.pnlTaskListBottom.Controls.Add(this.btnCloseTaskList);
             this.pnlTaskListBottom.Controls.Add(this.btnUpdateTaskList);
             this.pnlTaskListBottom.Controls.Add(this.btnAddTaskList);
             this.pnlTaskListBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -218,18 +218,18 @@ namespace PersonnelTracking
             this.btnDeleteTaskList.Text = "DELETE";
             this.btnDeleteTaskList.UseVisualStyleBackColor = false;
             // 
-            // btnCloseEmployeeList
+            // btnCloseTaskList
             // 
-            this.btnCloseEmployeeList.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnCloseEmployeeList.Font = new System.Drawing.Font("Lato", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCloseEmployeeList.ForeColor = System.Drawing.Color.DimGray;
-            this.btnCloseEmployeeList.Location = new System.Drawing.Point(705, 24);
-            this.btnCloseEmployeeList.Name = "btnCloseEmployeeList";
-            this.btnCloseEmployeeList.Size = new System.Drawing.Size(150, 70);
-            this.btnCloseEmployeeList.TabIndex = 4;
-            this.btnCloseEmployeeList.Text = "Close";
-            this.btnCloseEmployeeList.UseVisualStyleBackColor = false;
-            this.btnCloseEmployeeList.Click += new System.EventHandler(this.btnCloseEmployeeList_Click);
+            this.btnCloseTaskList.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnCloseTaskList.Font = new System.Drawing.Font("Lato", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCloseTaskList.ForeColor = System.Drawing.Color.DimGray;
+            this.btnCloseTaskList.Location = new System.Drawing.Point(705, 24);
+            this.btnCloseTaskList.Name = "btnCloseTaskList";
+            this.btnCloseTaskList.Size = new System.Drawing.Size(150, 70);
+            this.btnCloseTaskList.TabIndex = 4;
+            this.btnCloseTaskList.Text = "Close";
+            this.btnCloseTaskList.UseVisualStyleBackColor = false;
+            this.btnCloseTaskList.Click += new System.EventHandler(this.btnCloseTaskList_Click);
             // 
             // btnUpdateTaskList
             // 
@@ -468,7 +468,7 @@ namespace PersonnelTracking
         private System.Windows.Forms.Panel pnlTaskListBottom;
         private System.Windows.Forms.DataGridView dgvTaskList;
         private System.Windows.Forms.Button btnDeleteTaskList;
-        private System.Windows.Forms.Button btnCloseEmployeeList;
+        private System.Windows.Forms.Button btnCloseTaskList;
         private System.Windows.Forms.Button btnUpdateTaskList;
         private System.Windows.Forms.Button btnAddTaskList;
         private System.Windows.Forms.Button btnApproveTaskList;

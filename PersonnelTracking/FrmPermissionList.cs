@@ -10,26 +10,26 @@ using System.Windows.Forms;
 
 namespace PersonnelTracking
 {
-    public partial class FrmTaskList : Form
+    public partial class FrmPermissionList : Form
     {
-        public FrmTaskList()
+        public FrmPermissionList()
         {
             InitializeComponent();
         }
 
-        private void txtEmployeeIDSearch_KeyPress(object sender, KeyPressEventArgs e)
+        private void txtEmployeeID_KeyPress(object sender, KeyPressEventArgs e)
         {
             e.Handled = General.isNumber(e);
         }
 
-        private void btnCloseTaskList_Click(object sender, EventArgs e)
+        private void txtDayAmount_KeyPress(object sender, KeyPressEventArgs e)
         {
-            this.Close();
+            e.Handled = General.isNumber(e);
         }
 
-        private void FrmTaskList_Load(object sender, EventArgs e)
+        private void btnClosePermissionList_Click(object sender, EventArgs e)
         {
-            pnlAdminTaskList.Hide();
+            this.Close();
         }
     }
 }
