@@ -121,6 +121,7 @@ namespace PersonnelTracking
             this.Controls.Add(this.pnlPositionList);
             this.Controls.Add(this.dgvPositionList);
             this.Name = "FrmPositionList";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Position List";
             this.pnlPositionList.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPositionList)).EndInit();

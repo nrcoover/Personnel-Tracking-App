@@ -88,11 +88,11 @@
     <Compile Include="FrmPermissionList.Designer.cs">
       <DependentUpon>FrmPermissionList.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmPermissions.cs">
+    <Compile Include="FrmPermission.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmPermissions.Designer.cs">
-      <DependentUpon>FrmPermissions.cs</DependentUpon>
+    <Compile Include="FrmPermission.Designer.cs">
+      <DependentUpon>FrmPermission.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmPosition.cs">
       <SubType>Form</SubType>
@@ -154,8 +154,8 @@
     <EmbeddedResource Include="FrmPermissionList.resx">
       <DependentUpon>FrmPermissionList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmPermissions.resx">
-      <DependentUpon>FrmPermissions.cs</DependentUpon>
+    <EmbeddedResource Include="FrmPermission.resx">
+      <DependentUpon>FrmPermission.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPosition.resx">
       <DependentUpon>FrmPosition.cs</DependentUpon>
