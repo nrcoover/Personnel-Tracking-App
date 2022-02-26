@@ -1,7 +1,7 @@
 ﻿
 namespace PersonnelTracking
 {
-    partial class FrmPermissions
+    partial class FrmPermission
     {
         /// <summary>
         /// Required designer variable.
@@ -199,7 +199,7 @@ namespace PersonnelTracking
             this.btnClose.UseVisualStyleBackColor = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
-            // FrmPermissions
+            // FrmPermission
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -213,8 +213,8 @@ namespace PersonnelTracking
             this.Controls.Add(this.blbPermissionStart);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.lblPermissionDescription);
-            this.Name = "FrmPermissions";
-            this.Text = "Permissions";
+            this.Name = "FrmPermission";
+            this.Text = "Permission";
             this.pnlPermissionsTop.ResumeLayout(false);
             this.pnlPermissionsTop.PerformLayout();
             this.pnlPermissionsBottom.ResumeLayout(false);

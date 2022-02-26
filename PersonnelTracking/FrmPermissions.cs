@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PersonnelTracking
 {
-    public partial class FrmPermissions : Form
+    public partial class FrmPermission : Form
     {
-        public FrmPermissions()
+        public FrmPermission()
         {
             InitializeComponent();
         }
