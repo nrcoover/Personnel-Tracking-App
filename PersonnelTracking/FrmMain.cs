@@ -66,7 +66,9 @@ namespace PersonnelTracking
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
-            
+            FrmLogin frm = new FrmLogin();
+            this.Hide();
+            frm.ShowDialog();
         }
 
         private void btnExit_Click(object sender, EventArgs e)
