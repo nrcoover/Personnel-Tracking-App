@@ -74,7 +74,7 @@ namespace PersonnelTracking
             this.pnlEmployeeTop.Location = new System.Drawing.Point(0, 0);
             this.pnlEmployeeTop.Name = "pnlEmployeeTop";
             this.pnlEmployeeTop.Size = new System.Drawing.Size(869, 74);
-            this.pnlEmployeeTop.TabIndex = 1;
+            this.pnlEmployeeTop.TabIndex = 0;
             // 
             // cmbPositionSelect
             // 
@@ -83,7 +83,7 @@ namespace PersonnelTracking
             this.cmbPositionSelect.Location = new System.Drawing.Point(137, 273);
             this.cmbPositionSelect.Name = "cmbPositionSelect";
             this.cmbPositionSelect.Size = new System.Drawing.Size(198, 28);
-            this.cmbPositionSelect.TabIndex = 4;
+            this.cmbPositionSelect.TabIndex = 7;
             // 
             // lblPositionSelect
             // 
@@ -104,7 +104,7 @@ namespace PersonnelTracking
             this.cmbDepartmentSelect.Location = new System.Drawing.Point(137, 239);
             this.cmbDepartmentSelect.Name = "cmbDepartmentSelect";
             this.cmbDepartmentSelect.Size = new System.Drawing.Size(198, 28);
-            this.cmbDepartmentSelect.TabIndex = 3;
+            this.cmbDepartmentSelect.TabIndex = 6;
             // 
             // btnBrowseImage
             // 
@@ -114,7 +114,7 @@ namespace PersonnelTracking
             this.btnBrowseImage.Location = new System.Drawing.Point(341, 175);
             this.btnBrowseImage.Name = "btnBrowseImage";
             this.btnBrowseImage.Size = new System.Drawing.Size(102, 26);
-            this.btnBrowseImage.TabIndex = 5;
+            this.btnBrowseImage.TabIndex = 4;
             this.btnBrowseImage.Text = "Upload File";
             this.btnBrowseImage.UseVisualStyleBackColor = false;
             // 
@@ -159,7 +159,7 @@ namespace PersonnelTracking
             this.txtEmployeePassword.Location = new System.Drawing.Point(523, 28);
             this.txtEmployeePassword.Name = "txtEmployeePassword";
             this.txtEmployeePassword.Size = new System.Drawing.Size(177, 26);
-            this.txtEmployeePassword.TabIndex = 7;
+            this.txtEmployeePassword.TabIndex = 2;
             // 
             // lblPassword
             // 
@@ -204,7 +204,7 @@ namespace PersonnelTracking
             this.txtEmployeeName.Location = new System.Drawing.Point(137, 111);
             this.txtEmployeeName.Name = "txtEmployeeName";
             this.txtEmployeeName.Size = new System.Drawing.Size(198, 26);
-            this.txtEmployeeName.TabIndex = 0;
+            this.txtEmployeeName.TabIndex = 1;
             // 
             // lblEmployeeSurname
             // 
@@ -225,7 +225,7 @@ namespace PersonnelTracking
             this.txtEmployeeSurname.Location = new System.Drawing.Point(137, 143);
             this.txtEmployeeSurname.Name = "txtEmployeeSurname";
             this.txtEmployeeSurname.Size = new System.Drawing.Size(198, 26);
-            this.txtEmployeeSurname.TabIndex = 0;
+            this.txtEmployeeSurname.TabIndex = 2;
             // 
             // lblImagePath
             // 
@@ -246,7 +246,7 @@ namespace PersonnelTracking
             this.txtEmployeeImagePath.Location = new System.Drawing.Point(137, 175);
             this.txtEmployeeImagePath.Name = "txtEmployeeImagePath";
             this.txtEmployeeImagePath.Size = new System.Drawing.Size(198, 26);
-            this.txtEmployeeImagePath.TabIndex = 0;
+            this.txtEmployeeImagePath.TabIndex = 3;
             // 
             // pbxEmployeeImage
             // 
@@ -279,7 +279,7 @@ namespace PersonnelTracking
             this.textBox1.Location = new System.Drawing.Point(137, 207);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(198, 26);
-            this.textBox1.TabIndex = 0;
+            this.textBox1.TabIndex = 5;
             this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
             // dtpEmployeeBirthday
@@ -321,7 +321,7 @@ namespace PersonnelTracking
             this.txtEmployeeAddress.Multiline = true;
             this.txtEmployeeAddress.Name = "txtEmployeeAddress";
             this.txtEmployeeAddress.Size = new System.Drawing.Size(306, 96);
-            this.txtEmployeeAddress.TabIndex = 0;
+            this.txtEmployeeAddress.TabIndex = 9;
             // 
             // btnSave
             // 
@@ -331,7 +331,7 @@ namespace PersonnelTracking
             this.btnSave.Location = new System.Drawing.Point(137, 435);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(150, 49);
-            this.btnSave.TabIndex = 9;
+            this.btnSave.TabIndex = 10;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
             // 
@@ -343,7 +343,7 @@ namespace PersonnelTracking
             this.btnClose.Location = new System.Drawing.Point(293, 435);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(150, 49);
-            this.btnClose.TabIndex = 10;
+            this.btnClose.TabIndex = 11;
             this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
@@ -356,7 +356,7 @@ namespace PersonnelTracking
             this.btnCheck.Location = new System.Drawing.Point(341, 25);
             this.btnCheck.Name = "btnCheck";
             this.btnCheck.Size = new System.Drawing.Size(74, 26);
-            this.btnCheck.TabIndex = 9;
+            this.btnCheck.TabIndex = 1;
             this.btnCheck.Text = "Check";
             this.btnCheck.UseVisualStyleBackColor = false;
             // 

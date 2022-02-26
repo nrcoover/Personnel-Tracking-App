@@ -36,18 +36,18 @@ namespace PersonnelTracking
             this.btnAddEmployeeList = new System.Windows.Forms.Button();
             this.dgvEmployeeList = new System.Windows.Forms.DataGridView();
             this.pnlEmployeeListTop = new System.Windows.Forms.Panel();
+            this.cmbPositionSelect = new System.Windows.Forms.ComboBox();
+            this.lblPositionSelect = new System.Windows.Forms.Label();
+            this.cmbDepartmentSelect = new System.Windows.Forms.ComboBox();
+            this.btnClearEmployee = new System.Windows.Forms.Button();
+            this.btnSearchEmployee = new System.Windows.Forms.Button();
+            this.lblDepartmentSelect = new System.Windows.Forms.Label();
+            this.txtEmployeeSurname = new System.Windows.Forms.TextBox();
+            this.lblEmployeeSurname = new System.Windows.Forms.Label();
             this.txtEmployeeName = new System.Windows.Forms.TextBox();
             this.txtEmployeeIDSearch = new System.Windows.Forms.TextBox();
             this.lblEmployeeName = new System.Windows.Forms.Label();
             this.lblEmployeeIDSearch = new System.Windows.Forms.Label();
-            this.txtEmployeeSurname = new System.Windows.Forms.TextBox();
-            this.lblEmployeeSurname = new System.Windows.Forms.Label();
-            this.cmbDepartmentSelect = new System.Windows.Forms.ComboBox();
-            this.lblDepartmentSelect = new System.Windows.Forms.Label();
-            this.lblPositionSelect = new System.Windows.Forms.Label();
-            this.cmbPositionSelect = new System.Windows.Forms.ComboBox();
-            this.btnSearchEmployee = new System.Windows.Forms.Button();
-            this.btnClearEmployee = new System.Windows.Forms.Button();
             this.pnlEmployeeList.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmployeeList)).BeginInit();
             this.pnlEmployeeListTop.SuspendLayout();
@@ -144,6 +144,93 @@ namespace PersonnelTracking
             this.pnlEmployeeListTop.Size = new System.Drawing.Size(930, 169);
             this.pnlEmployeeListTop.TabIndex = 0;
             // 
+            // cmbPositionSelect
+            // 
+            this.cmbPositionSelect.Font = new System.Drawing.Font("Lato Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbPositionSelect.FormattingEnabled = true;
+            this.cmbPositionSelect.Location = new System.Drawing.Point(533, 68);
+            this.cmbPositionSelect.Name = "cmbPositionSelect";
+            this.cmbPositionSelect.Size = new System.Drawing.Size(217, 28);
+            this.cmbPositionSelect.TabIndex = 4;
+            // 
+            // lblPositionSelect
+            // 
+            this.lblPositionSelect.AutoSize = true;
+            this.lblPositionSelect.BackColor = System.Drawing.Color.Transparent;
+            this.lblPositionSelect.Font = new System.Drawing.Font("Lato", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPositionSelect.ForeColor = System.Drawing.Color.Gray;
+            this.lblPositionSelect.Location = new System.Drawing.Point(421, 71);
+            this.lblPositionSelect.Name = "lblPositionSelect";
+            this.lblPositionSelect.Size = new System.Drawing.Size(67, 20);
+            this.lblPositionSelect.TabIndex = 0;
+            this.lblPositionSelect.Text = "Position";
+            // 
+            // cmbDepartmentSelect
+            // 
+            this.cmbDepartmentSelect.Font = new System.Drawing.Font("Lato Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbDepartmentSelect.FormattingEnabled = true;
+            this.cmbDepartmentSelect.Location = new System.Drawing.Point(533, 25);
+            this.cmbDepartmentSelect.Name = "cmbDepartmentSelect";
+            this.cmbDepartmentSelect.Size = new System.Drawing.Size(217, 28);
+            this.cmbDepartmentSelect.TabIndex = 3;
+            // 
+            // btnClearEmployee
+            // 
+            this.btnClearEmployee.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnClearEmployee.Font = new System.Drawing.Font("Lato", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClearEmployee.ForeColor = System.Drawing.Color.DimGray;
+            this.btnClearEmployee.Location = new System.Drawing.Point(768, 84);
+            this.btnClearEmployee.Name = "btnClearEmployee";
+            this.btnClearEmployee.Size = new System.Drawing.Size(150, 54);
+            this.btnClearEmployee.TabIndex = 6;
+            this.btnClearEmployee.Text = "Clear";
+            this.btnClearEmployee.UseVisualStyleBackColor = false;
+            // 
+            // btnSearchEmployee
+            // 
+            this.btnSearchEmployee.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnSearchEmployee.Font = new System.Drawing.Font("Lato", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearchEmployee.ForeColor = System.Drawing.Color.DimGray;
+            this.btnSearchEmployee.Location = new System.Drawing.Point(768, 21);
+            this.btnSearchEmployee.Name = "btnSearchEmployee";
+            this.btnSearchEmployee.Size = new System.Drawing.Size(150, 54);
+            this.btnSearchEmployee.TabIndex = 5;
+            this.btnSearchEmployee.Text = "Search";
+            this.btnSearchEmployee.UseVisualStyleBackColor = false;
+            // 
+            // lblDepartmentSelect
+            // 
+            this.lblDepartmentSelect.AutoSize = true;
+            this.lblDepartmentSelect.BackColor = System.Drawing.Color.Transparent;
+            this.lblDepartmentSelect.Font = new System.Drawing.Font("Lato", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDepartmentSelect.ForeColor = System.Drawing.Color.Gray;
+            this.lblDepartmentSelect.Location = new System.Drawing.Point(421, 28);
+            this.lblDepartmentSelect.Name = "lblDepartmentSelect";
+            this.lblDepartmentSelect.Size = new System.Drawing.Size(98, 20);
+            this.lblDepartmentSelect.TabIndex = 0;
+            this.lblDepartmentSelect.Text = "Department";
+            // 
+            // txtEmployeeSurname
+            // 
+            this.txtEmployeeSurname.BackColor = System.Drawing.Color.White;
+            this.txtEmployeeSurname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmployeeSurname.Location = new System.Drawing.Point(185, 112);
+            this.txtEmployeeSurname.Name = "txtEmployeeSurname";
+            this.txtEmployeeSurname.Size = new System.Drawing.Size(198, 26);
+            this.txtEmployeeSurname.TabIndex = 2;
+            // 
+            // lblEmployeeSurname
+            // 
+            this.lblEmployeeSurname.AutoSize = true;
+            this.lblEmployeeSurname.BackColor = System.Drawing.Color.Transparent;
+            this.lblEmployeeSurname.Font = new System.Drawing.Font("Lato", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmployeeSurname.ForeColor = System.Drawing.Color.Gray;
+            this.lblEmployeeSurname.Location = new System.Drawing.Point(30, 115);
+            this.lblEmployeeSurname.Name = "lblEmployeeSurname";
+            this.lblEmployeeSurname.Size = new System.Drawing.Size(149, 20);
+            this.lblEmployeeSurname.TabIndex = 0;
+            this.lblEmployeeSurname.Text = "Employee Surname";
+            // 
             // txtEmployeeName
             // 
             this.txtEmployeeName.BackColor = System.Drawing.Color.White;
@@ -186,93 +273,6 @@ namespace PersonnelTracking
             this.lblEmployeeIDSearch.Size = new System.Drawing.Size(101, 20);
             this.lblEmployeeIDSearch.TabIndex = 0;
             this.lblEmployeeIDSearch.Text = "Employee ID";
-            // 
-            // txtEmployeeSurname
-            // 
-            this.txtEmployeeSurname.BackColor = System.Drawing.Color.White;
-            this.txtEmployeeSurname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmployeeSurname.Location = new System.Drawing.Point(185, 112);
-            this.txtEmployeeSurname.Name = "txtEmployeeSurname";
-            this.txtEmployeeSurname.Size = new System.Drawing.Size(198, 26);
-            this.txtEmployeeSurname.TabIndex = 2;
-            // 
-            // lblEmployeeSurname
-            // 
-            this.lblEmployeeSurname.AutoSize = true;
-            this.lblEmployeeSurname.BackColor = System.Drawing.Color.Transparent;
-            this.lblEmployeeSurname.Font = new System.Drawing.Font("Lato", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmployeeSurname.ForeColor = System.Drawing.Color.Gray;
-            this.lblEmployeeSurname.Location = new System.Drawing.Point(30, 115);
-            this.lblEmployeeSurname.Name = "lblEmployeeSurname";
-            this.lblEmployeeSurname.Size = new System.Drawing.Size(149, 20);
-            this.lblEmployeeSurname.TabIndex = 0;
-            this.lblEmployeeSurname.Text = "Employee Surname";
-            // 
-            // cmbDepartmentSelect
-            // 
-            this.cmbDepartmentSelect.Font = new System.Drawing.Font("Lato Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbDepartmentSelect.FormattingEnabled = true;
-            this.cmbDepartmentSelect.Location = new System.Drawing.Point(533, 25);
-            this.cmbDepartmentSelect.Name = "cmbDepartmentSelect";
-            this.cmbDepartmentSelect.Size = new System.Drawing.Size(217, 28);
-            this.cmbDepartmentSelect.TabIndex = 3;
-            // 
-            // lblDepartmentSelect
-            // 
-            this.lblDepartmentSelect.AutoSize = true;
-            this.lblDepartmentSelect.BackColor = System.Drawing.Color.Transparent;
-            this.lblDepartmentSelect.Font = new System.Drawing.Font("Lato", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDepartmentSelect.ForeColor = System.Drawing.Color.Gray;
-            this.lblDepartmentSelect.Location = new System.Drawing.Point(421, 28);
-            this.lblDepartmentSelect.Name = "lblDepartmentSelect";
-            this.lblDepartmentSelect.Size = new System.Drawing.Size(98, 20);
-            this.lblDepartmentSelect.TabIndex = 0;
-            this.lblDepartmentSelect.Text = "Department";
-            // 
-            // lblPositionSelect
-            // 
-            this.lblPositionSelect.AutoSize = true;
-            this.lblPositionSelect.BackColor = System.Drawing.Color.Transparent;
-            this.lblPositionSelect.Font = new System.Drawing.Font("Lato", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPositionSelect.ForeColor = System.Drawing.Color.Gray;
-            this.lblPositionSelect.Location = new System.Drawing.Point(421, 71);
-            this.lblPositionSelect.Name = "lblPositionSelect";
-            this.lblPositionSelect.Size = new System.Drawing.Size(67, 20);
-            this.lblPositionSelect.TabIndex = 0;
-            this.lblPositionSelect.Text = "Position";
-            // 
-            // cmbPositionSelect
-            // 
-            this.cmbPositionSelect.Font = new System.Drawing.Font("Lato Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbPositionSelect.FormattingEnabled = true;
-            this.cmbPositionSelect.Location = new System.Drawing.Point(533, 68);
-            this.cmbPositionSelect.Name = "cmbPositionSelect";
-            this.cmbPositionSelect.Size = new System.Drawing.Size(217, 28);
-            this.cmbPositionSelect.TabIndex = 4;
-            // 
-            // btnSearchEmployee
-            // 
-            this.btnSearchEmployee.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnSearchEmployee.Font = new System.Drawing.Font("Lato", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearchEmployee.ForeColor = System.Drawing.Color.DimGray;
-            this.btnSearchEmployee.Location = new System.Drawing.Point(768, 21);
-            this.btnSearchEmployee.Name = "btnSearchEmployee";
-            this.btnSearchEmployee.Size = new System.Drawing.Size(150, 54);
-            this.btnSearchEmployee.TabIndex = 5;
-            this.btnSearchEmployee.Text = "Search";
-            this.btnSearchEmployee.UseVisualStyleBackColor = false;
-            // 
-            // btnClearEmployee
-            // 
-            this.btnClearEmployee.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnClearEmployee.Font = new System.Drawing.Font("Lato", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClearEmployee.ForeColor = System.Drawing.Color.DimGray;
-            this.btnClearEmployee.Location = new System.Drawing.Point(768, 84);
-            this.btnClearEmployee.Name = "btnClearEmployee";
-            this.btnClearEmployee.Size = new System.Drawing.Size(150, 54);
-            this.btnClearEmployee.TabIndex = 6;
-            this.btnClearEmployee.Text = "Clear";
-            this.btnClearEmployee.UseVisualStyleBackColor = false;
             // 
             // FrmEmployeeList
             // 
