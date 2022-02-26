@@ -31,7 +31,23 @@ namespace PersonnelTracking
         {
             this.pnlTaskListSearchCriteria = new System.Windows.Forms.Panel();
             this.pnlEmployeeTaskList = new System.Windows.Forms.Panel();
+            this.btnClearTask = new System.Windows.Forms.Button();
+            this.btnSearchTask = new System.Windows.Forms.Button();
+            this.cmbTaskState = new System.Windows.Forms.ComboBox();
+            this.lblTaskState = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.rdbDeliveryDate = new System.Windows.Forms.RadioButton();
+            this.rdbStartDate = new System.Windows.Forms.RadioButton();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtpEmployeeBirthday = new System.Windows.Forms.DateTimePicker();
+            this.lblTaskFinish = new System.Windows.Forms.Label();
+            this.lblTaskDate = new System.Windows.Forms.Label();
+            this.blbTaskStart = new System.Windows.Forms.Label();
             this.pnlAdminTaskList = new System.Windows.Forms.Panel();
+            this.cmbPositionSelect = new System.Windows.Forms.ComboBox();
+            this.lblPositionSelect = new System.Windows.Forms.Label();
+            this.cmbDepartmentSelect = new System.Windows.Forms.ComboBox();
+            this.lblDepartmentSelect = new System.Windows.Forms.Label();
             this.txtEmployeeSurname = new System.Windows.Forms.TextBox();
             this.lblEmployeeSurname = new System.Windows.Forms.Label();
             this.txtEmployeeName = new System.Windows.Forms.TextBox();
@@ -43,30 +59,14 @@ namespace PersonnelTracking
             this.btnDeleteTaskList = new System.Windows.Forms.Button();
             this.btnCloseTaskList = new System.Windows.Forms.Button();
             this.btnUpdateTaskList = new System.Windows.Forms.Button();
-            this.btnAddTaskList = new System.Windows.Forms.Button();
+            this.btnNewTaskList = new System.Windows.Forms.Button();
             this.dgvTaskList = new System.Windows.Forms.DataGridView();
-            this.cmbPositionSelect = new System.Windows.Forms.ComboBox();
-            this.lblPositionSelect = new System.Windows.Forms.Label();
-            this.cmbDepartmentSelect = new System.Windows.Forms.ComboBox();
-            this.lblDepartmentSelect = new System.Windows.Forms.Label();
-            this.dtpEmployeeBirthday = new System.Windows.Forms.DateTimePicker();
-            this.blbTaskStart = new System.Windows.Forms.Label();
-            this.lblTaskDate = new System.Windows.Forms.Label();
-            this.lblTaskFinish = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.rdbStartDate = new System.Windows.Forms.RadioButton();
-            this.rdbDeliveryDate = new System.Windows.Forms.RadioButton();
-            this.lblTaskState = new System.Windows.Forms.Label();
-            this.cmbTaskState = new System.Windows.Forms.ComboBox();
-            this.btnClearTask = new System.Windows.Forms.Button();
-            this.btnSearchTask = new System.Windows.Forms.Button();
             this.pnlTaskListSearchCriteria.SuspendLayout();
             this.pnlEmployeeTaskList.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.pnlAdminTaskList.SuspendLayout();
             this.pnlTaskListBottom.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTaskList)).BeginInit();
-            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlTaskListSearchCriteria
@@ -98,6 +98,137 @@ namespace PersonnelTracking
             this.pnlEmployeeTaskList.Size = new System.Drawing.Size(461, 223);
             this.pnlEmployeeTaskList.TabIndex = 1;
             // 
+            // btnClearTask
+            // 
+            this.btnClearTask.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnClearTask.Font = new System.Drawing.Font("Lato", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClearTask.ForeColor = System.Drawing.Color.DimGray;
+            this.btnClearTask.Location = new System.Drawing.Point(239, 143);
+            this.btnClearTask.Name = "btnClearTask";
+            this.btnClearTask.Size = new System.Drawing.Size(150, 54);
+            this.btnClearTask.TabIndex = 4;
+            this.btnClearTask.Text = "Clear";
+            this.btnClearTask.UseVisualStyleBackColor = false;
+            // 
+            // btnSearchTask
+            // 
+            this.btnSearchTask.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnSearchTask.Font = new System.Drawing.Font("Lato", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearchTask.ForeColor = System.Drawing.Color.DimGray;
+            this.btnSearchTask.Location = new System.Drawing.Point(83, 143);
+            this.btnSearchTask.Name = "btnSearchTask";
+            this.btnSearchTask.Size = new System.Drawing.Size(150, 54);
+            this.btnSearchTask.TabIndex = 3;
+            this.btnSearchTask.Text = "Search";
+            this.btnSearchTask.UseVisualStyleBackColor = false;
+            // 
+            // cmbTaskState
+            // 
+            this.cmbTaskState.Font = new System.Drawing.Font("Lato Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbTaskState.FormattingEnabled = true;
+            this.cmbTaskState.Location = new System.Drawing.Point(106, 109);
+            this.cmbTaskState.Name = "cmbTaskState";
+            this.cmbTaskState.Size = new System.Drawing.Size(175, 28);
+            this.cmbTaskState.TabIndex = 2;
+            // 
+            // lblTaskState
+            // 
+            this.lblTaskState.AutoSize = true;
+            this.lblTaskState.BackColor = System.Drawing.Color.Transparent;
+            this.lblTaskState.Font = new System.Drawing.Font("Lato", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTaskState.ForeColor = System.Drawing.Color.Gray;
+            this.lblTaskState.Location = new System.Drawing.Point(12, 112);
+            this.lblTaskState.Name = "lblTaskState";
+            this.lblTaskState.Size = new System.Drawing.Size(84, 20);
+            this.lblTaskState.TabIndex = 9;
+            this.lblTaskState.Text = "Task State";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.Color.LightGray;
+            this.groupBox1.Controls.Add(this.rdbDeliveryDate);
+            this.groupBox1.Controls.Add(this.rdbStartDate);
+            this.groupBox1.Font = new System.Drawing.Font("Lato", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(299, 41);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(137, 71);
+            this.groupBox1.TabIndex = 11;
+            this.groupBox1.TabStop = false;
+            // 
+            // rdbDeliveryDate
+            // 
+            this.rdbDeliveryDate.AutoSize = true;
+            this.rdbDeliveryDate.ForeColor = System.Drawing.Color.Gray;
+            this.rdbDeliveryDate.Location = new System.Drawing.Point(6, 39);
+            this.rdbDeliveryDate.Name = "rdbDeliveryDate";
+            this.rdbDeliveryDate.Size = new System.Drawing.Size(110, 21);
+            this.rdbDeliveryDate.TabIndex = 1;
+            this.rdbDeliveryDate.TabStop = true;
+            this.rdbDeliveryDate.Text = "Delivery Date";
+            this.rdbDeliveryDate.UseVisualStyleBackColor = true;
+            // 
+            // rdbStartDate
+            // 
+            this.rdbStartDate.AutoSize = true;
+            this.rdbStartDate.ForeColor = System.Drawing.Color.Gray;
+            this.rdbStartDate.Location = new System.Drawing.Point(6, 12);
+            this.rdbStartDate.Name = "rdbStartDate";
+            this.rdbStartDate.Size = new System.Drawing.Size(89, 21);
+            this.rdbStartDate.TabIndex = 0;
+            this.rdbStartDate.TabStop = true;
+            this.rdbStartDate.Text = "Start Date";
+            this.rdbStartDate.UseVisualStyleBackColor = true;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(83, 83);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(198, 20);
+            this.dateTimePicker1.TabIndex = 1;
+            // 
+            // dtpEmployeeBirthday
+            // 
+            this.dtpEmployeeBirthday.Location = new System.Drawing.Point(83, 57);
+            this.dtpEmployeeBirthday.Name = "dtpEmployeeBirthday";
+            this.dtpEmployeeBirthday.Size = new System.Drawing.Size(198, 20);
+            this.dtpEmployeeBirthday.TabIndex = 0;
+            // 
+            // lblTaskFinish
+            // 
+            this.lblTaskFinish.AutoSize = true;
+            this.lblTaskFinish.BackColor = System.Drawing.Color.Transparent;
+            this.lblTaskFinish.Font = new System.Drawing.Font("Lato", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTaskFinish.ForeColor = System.Drawing.Color.Gray;
+            this.lblTaskFinish.Location = new System.Drawing.Point(12, 83);
+            this.lblTaskFinish.Name = "lblTaskFinish";
+            this.lblTaskFinish.Size = new System.Drawing.Size(51, 20);
+            this.lblTaskFinish.TabIndex = 9;
+            this.lblTaskFinish.Text = "Finish";
+            // 
+            // lblTaskDate
+            // 
+            this.lblTaskDate.AutoSize = true;
+            this.lblTaskDate.BackColor = System.Drawing.Color.Transparent;
+            this.lblTaskDate.Font = new System.Drawing.Font("Lato", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTaskDate.ForeColor = System.Drawing.Color.Gray;
+            this.lblTaskDate.Location = new System.Drawing.Point(12, 28);
+            this.lblTaskDate.Name = "lblTaskDate";
+            this.lblTaskDate.Size = new System.Drawing.Size(81, 20);
+            this.lblTaskDate.TabIndex = 9;
+            this.lblTaskDate.Text = "Task Date";
+            // 
+            // blbTaskStart
+            // 
+            this.blbTaskStart.AutoSize = true;
+            this.blbTaskStart.BackColor = System.Drawing.Color.Transparent;
+            this.blbTaskStart.Font = new System.Drawing.Font("Lato", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.blbTaskStart.ForeColor = System.Drawing.Color.Gray;
+            this.blbTaskStart.Location = new System.Drawing.Point(12, 57);
+            this.blbTaskStart.Name = "blbTaskStart";
+            this.blbTaskStart.Size = new System.Drawing.Size(45, 20);
+            this.blbTaskStart.TabIndex = 9;
+            this.blbTaskStart.Text = "Start";
+            // 
             // pnlAdminTaskList
             // 
             this.pnlAdminTaskList.Controls.Add(this.cmbPositionSelect);
@@ -115,6 +246,48 @@ namespace PersonnelTracking
             this.pnlAdminTaskList.Name = "pnlAdminTaskList";
             this.pnlAdminTaskList.Size = new System.Drawing.Size(406, 223);
             this.pnlAdminTaskList.TabIndex = 0;
+            // 
+            // cmbPositionSelect
+            // 
+            this.cmbPositionSelect.Font = new System.Drawing.Font("Lato Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbPositionSelect.FormattingEnabled = true;
+            this.cmbPositionSelect.Location = new System.Drawing.Point(128, 155);
+            this.cmbPositionSelect.Name = "cmbPositionSelect";
+            this.cmbPositionSelect.Size = new System.Drawing.Size(246, 28);
+            this.cmbPositionSelect.TabIndex = 4;
+            // 
+            // lblPositionSelect
+            // 
+            this.lblPositionSelect.AutoSize = true;
+            this.lblPositionSelect.BackColor = System.Drawing.Color.Transparent;
+            this.lblPositionSelect.Font = new System.Drawing.Font("Lato", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPositionSelect.ForeColor = System.Drawing.Color.Gray;
+            this.lblPositionSelect.Location = new System.Drawing.Point(21, 158);
+            this.lblPositionSelect.Name = "lblPositionSelect";
+            this.lblPositionSelect.Size = new System.Drawing.Size(67, 20);
+            this.lblPositionSelect.TabIndex = 9;
+            this.lblPositionSelect.Text = "Position";
+            // 
+            // cmbDepartmentSelect
+            // 
+            this.cmbDepartmentSelect.Font = new System.Drawing.Font("Lato Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbDepartmentSelect.FormattingEnabled = true;
+            this.cmbDepartmentSelect.Location = new System.Drawing.Point(128, 121);
+            this.cmbDepartmentSelect.Name = "cmbDepartmentSelect";
+            this.cmbDepartmentSelect.Size = new System.Drawing.Size(246, 28);
+            this.cmbDepartmentSelect.TabIndex = 3;
+            // 
+            // lblDepartmentSelect
+            // 
+            this.lblDepartmentSelect.AutoSize = true;
+            this.lblDepartmentSelect.BackColor = System.Drawing.Color.Transparent;
+            this.lblDepartmentSelect.Font = new System.Drawing.Font("Lato", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDepartmentSelect.ForeColor = System.Drawing.Color.Gray;
+            this.lblDepartmentSelect.Location = new System.Drawing.Point(21, 124);
+            this.lblDepartmentSelect.Name = "lblDepartmentSelect";
+            this.lblDepartmentSelect.Size = new System.Drawing.Size(98, 20);
+            this.lblDepartmentSelect.TabIndex = 10;
+            this.lblDepartmentSelect.Text = "Department";
             // 
             // txtEmployeeSurname
             // 
@@ -187,7 +360,7 @@ namespace PersonnelTracking
             this.pnlTaskListBottom.Controls.Add(this.btnDeleteTaskList);
             this.pnlTaskListBottom.Controls.Add(this.btnCloseTaskList);
             this.pnlTaskListBottom.Controls.Add(this.btnUpdateTaskList);
-            this.pnlTaskListBottom.Controls.Add(this.btnAddTaskList);
+            this.pnlTaskListBottom.Controls.Add(this.btnNewTaskList);
             this.pnlTaskListBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pnlTaskListBottom.Location = new System.Drawing.Point(0, 472);
             this.pnlTaskListBottom.Name = "pnlTaskListBottom";
@@ -243,17 +416,17 @@ namespace PersonnelTracking
             this.btnUpdateTaskList.Text = "Update";
             this.btnUpdateTaskList.UseVisualStyleBackColor = false;
             // 
-            // btnAddTaskList
+            // btnNewTaskList
             // 
-            this.btnAddTaskList.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnAddTaskList.Font = new System.Drawing.Font("Lato", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddTaskList.ForeColor = System.Drawing.Color.DimGray;
-            this.btnAddTaskList.Location = new System.Drawing.Point(168, 24);
-            this.btnAddTaskList.Name = "btnAddTaskList";
-            this.btnAddTaskList.Size = new System.Drawing.Size(150, 70);
-            this.btnAddTaskList.TabIndex = 1;
-            this.btnAddTaskList.Text = "Add";
-            this.btnAddTaskList.UseVisualStyleBackColor = false;
+            this.btnNewTaskList.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnNewTaskList.Font = new System.Drawing.Font("Lato", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNewTaskList.ForeColor = System.Drawing.Color.DimGray;
+            this.btnNewTaskList.Location = new System.Drawing.Point(168, 24);
+            this.btnNewTaskList.Name = "btnNewTaskList";
+            this.btnNewTaskList.Size = new System.Drawing.Size(150, 70);
+            this.btnNewTaskList.TabIndex = 1;
+            this.btnNewTaskList.Text = "New";
+            this.btnNewTaskList.UseVisualStyleBackColor = false;
             // 
             // dgvTaskList
             // 
@@ -263,179 +436,6 @@ namespace PersonnelTracking
             this.dgvTaskList.Name = "dgvTaskList";
             this.dgvTaskList.Size = new System.Drawing.Size(867, 249);
             this.dgvTaskList.TabIndex = 2;
-            // 
-            // cmbPositionSelect
-            // 
-            this.cmbPositionSelect.Font = new System.Drawing.Font("Lato Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbPositionSelect.FormattingEnabled = true;
-            this.cmbPositionSelect.Location = new System.Drawing.Point(128, 155);
-            this.cmbPositionSelect.Name = "cmbPositionSelect";
-            this.cmbPositionSelect.Size = new System.Drawing.Size(246, 28);
-            this.cmbPositionSelect.TabIndex = 4;
-            // 
-            // lblPositionSelect
-            // 
-            this.lblPositionSelect.AutoSize = true;
-            this.lblPositionSelect.BackColor = System.Drawing.Color.Transparent;
-            this.lblPositionSelect.Font = new System.Drawing.Font("Lato", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPositionSelect.ForeColor = System.Drawing.Color.Gray;
-            this.lblPositionSelect.Location = new System.Drawing.Point(21, 158);
-            this.lblPositionSelect.Name = "lblPositionSelect";
-            this.lblPositionSelect.Size = new System.Drawing.Size(67, 20);
-            this.lblPositionSelect.TabIndex = 9;
-            this.lblPositionSelect.Text = "Position";
-            // 
-            // cmbDepartmentSelect
-            // 
-            this.cmbDepartmentSelect.Font = new System.Drawing.Font("Lato Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbDepartmentSelect.FormattingEnabled = true;
-            this.cmbDepartmentSelect.Location = new System.Drawing.Point(128, 121);
-            this.cmbDepartmentSelect.Name = "cmbDepartmentSelect";
-            this.cmbDepartmentSelect.Size = new System.Drawing.Size(246, 28);
-            this.cmbDepartmentSelect.TabIndex = 3;
-            // 
-            // lblDepartmentSelect
-            // 
-            this.lblDepartmentSelect.AutoSize = true;
-            this.lblDepartmentSelect.BackColor = System.Drawing.Color.Transparent;
-            this.lblDepartmentSelect.Font = new System.Drawing.Font("Lato", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDepartmentSelect.ForeColor = System.Drawing.Color.Gray;
-            this.lblDepartmentSelect.Location = new System.Drawing.Point(21, 124);
-            this.lblDepartmentSelect.Name = "lblDepartmentSelect";
-            this.lblDepartmentSelect.Size = new System.Drawing.Size(98, 20);
-            this.lblDepartmentSelect.TabIndex = 10;
-            this.lblDepartmentSelect.Text = "Department";
-            // 
-            // dtpEmployeeBirthday
-            // 
-            this.dtpEmployeeBirthday.Location = new System.Drawing.Point(83, 57);
-            this.dtpEmployeeBirthday.Name = "dtpEmployeeBirthday";
-            this.dtpEmployeeBirthday.Size = new System.Drawing.Size(198, 20);
-            this.dtpEmployeeBirthday.TabIndex = 0;
-            // 
-            // blbTaskStart
-            // 
-            this.blbTaskStart.AutoSize = true;
-            this.blbTaskStart.BackColor = System.Drawing.Color.Transparent;
-            this.blbTaskStart.Font = new System.Drawing.Font("Lato", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.blbTaskStart.ForeColor = System.Drawing.Color.Gray;
-            this.blbTaskStart.Location = new System.Drawing.Point(12, 57);
-            this.blbTaskStart.Name = "blbTaskStart";
-            this.blbTaskStart.Size = new System.Drawing.Size(45, 20);
-            this.blbTaskStart.TabIndex = 9;
-            this.blbTaskStart.Text = "Start";
-            // 
-            // lblTaskDate
-            // 
-            this.lblTaskDate.AutoSize = true;
-            this.lblTaskDate.BackColor = System.Drawing.Color.Transparent;
-            this.lblTaskDate.Font = new System.Drawing.Font("Lato", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTaskDate.ForeColor = System.Drawing.Color.Gray;
-            this.lblTaskDate.Location = new System.Drawing.Point(12, 28);
-            this.lblTaskDate.Name = "lblTaskDate";
-            this.lblTaskDate.Size = new System.Drawing.Size(81, 20);
-            this.lblTaskDate.TabIndex = 9;
-            this.lblTaskDate.Text = "Task Date";
-            // 
-            // lblTaskFinish
-            // 
-            this.lblTaskFinish.AutoSize = true;
-            this.lblTaskFinish.BackColor = System.Drawing.Color.Transparent;
-            this.lblTaskFinish.Font = new System.Drawing.Font("Lato", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTaskFinish.ForeColor = System.Drawing.Color.Gray;
-            this.lblTaskFinish.Location = new System.Drawing.Point(12, 83);
-            this.lblTaskFinish.Name = "lblTaskFinish";
-            this.lblTaskFinish.Size = new System.Drawing.Size(51, 20);
-            this.lblTaskFinish.TabIndex = 9;
-            this.lblTaskFinish.Text = "Finish";
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(83, 83);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(198, 20);
-            this.dateTimePicker1.TabIndex = 1;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.BackColor = System.Drawing.Color.LightGray;
-            this.groupBox1.Controls.Add(this.rdbDeliveryDate);
-            this.groupBox1.Controls.Add(this.rdbStartDate);
-            this.groupBox1.Font = new System.Drawing.Font("Lato", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(299, 41);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(137, 71);
-            this.groupBox1.TabIndex = 11;
-            this.groupBox1.TabStop = false;
-            // 
-            // rdbStartDate
-            // 
-            this.rdbStartDate.AutoSize = true;
-            this.rdbStartDate.ForeColor = System.Drawing.Color.Gray;
-            this.rdbStartDate.Location = new System.Drawing.Point(6, 12);
-            this.rdbStartDate.Name = "rdbStartDate";
-            this.rdbStartDate.Size = new System.Drawing.Size(89, 21);
-            this.rdbStartDate.TabIndex = 0;
-            this.rdbStartDate.TabStop = true;
-            this.rdbStartDate.Text = "Start Date";
-            this.rdbStartDate.UseVisualStyleBackColor = true;
-            // 
-            // rdbDeliveryDate
-            // 
-            this.rdbDeliveryDate.AutoSize = true;
-            this.rdbDeliveryDate.ForeColor = System.Drawing.Color.Gray;
-            this.rdbDeliveryDate.Location = new System.Drawing.Point(6, 39);
-            this.rdbDeliveryDate.Name = "rdbDeliveryDate";
-            this.rdbDeliveryDate.Size = new System.Drawing.Size(110, 21);
-            this.rdbDeliveryDate.TabIndex = 1;
-            this.rdbDeliveryDate.TabStop = true;
-            this.rdbDeliveryDate.Text = "Delivery Date";
-            this.rdbDeliveryDate.UseVisualStyleBackColor = true;
-            // 
-            // lblTaskState
-            // 
-            this.lblTaskState.AutoSize = true;
-            this.lblTaskState.BackColor = System.Drawing.Color.Transparent;
-            this.lblTaskState.Font = new System.Drawing.Font("Lato", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTaskState.ForeColor = System.Drawing.Color.Gray;
-            this.lblTaskState.Location = new System.Drawing.Point(12, 112);
-            this.lblTaskState.Name = "lblTaskState";
-            this.lblTaskState.Size = new System.Drawing.Size(84, 20);
-            this.lblTaskState.TabIndex = 9;
-            this.lblTaskState.Text = "Task State";
-            // 
-            // cmbTaskState
-            // 
-            this.cmbTaskState.Font = new System.Drawing.Font("Lato Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbTaskState.FormattingEnabled = true;
-            this.cmbTaskState.Location = new System.Drawing.Point(106, 109);
-            this.cmbTaskState.Name = "cmbTaskState";
-            this.cmbTaskState.Size = new System.Drawing.Size(175, 28);
-            this.cmbTaskState.TabIndex = 2;
-            // 
-            // btnClearTask
-            // 
-            this.btnClearTask.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnClearTask.Font = new System.Drawing.Font("Lato", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClearTask.ForeColor = System.Drawing.Color.DimGray;
-            this.btnClearTask.Location = new System.Drawing.Point(239, 143);
-            this.btnClearTask.Name = "btnClearTask";
-            this.btnClearTask.Size = new System.Drawing.Size(150, 54);
-            this.btnClearTask.TabIndex = 4;
-            this.btnClearTask.Text = "Clear";
-            this.btnClearTask.UseVisualStyleBackColor = false;
-            // 
-            // btnSearchTask
-            // 
-            this.btnSearchTask.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnSearchTask.Font = new System.Drawing.Font("Lato", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearchTask.ForeColor = System.Drawing.Color.DimGray;
-            this.btnSearchTask.Location = new System.Drawing.Point(83, 143);
-            this.btnSearchTask.Name = "btnSearchTask";
-            this.btnSearchTask.Size = new System.Drawing.Size(150, 54);
-            this.btnSearchTask.TabIndex = 3;
-            this.btnSearchTask.Text = "Search";
-            this.btnSearchTask.UseVisualStyleBackColor = false;
             // 
             // FrmTaskList
             // 
@@ -452,12 +452,12 @@ namespace PersonnelTracking
             this.pnlTaskListSearchCriteria.ResumeLayout(false);
             this.pnlEmployeeTaskList.ResumeLayout(false);
             this.pnlEmployeeTaskList.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.pnlAdminTaskList.ResumeLayout(false);
             this.pnlAdminTaskList.PerformLayout();
             this.pnlTaskListBottom.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvTaskList)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -470,7 +470,7 @@ namespace PersonnelTracking
         private System.Windows.Forms.Button btnDeleteTaskList;
         private System.Windows.Forms.Button btnCloseTaskList;
         private System.Windows.Forms.Button btnUpdateTaskList;
-        private System.Windows.Forms.Button btnAddTaskList;
+        private System.Windows.Forms.Button btnNewTaskList;
         private System.Windows.Forms.Button btnApproveTaskList;
         private System.Windows.Forms.Panel pnlEmployeeTaskList;
         private System.Windows.Forms.Panel pnlAdminTaskList;

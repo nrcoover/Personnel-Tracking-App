@@ -33,7 +33,7 @@ namespace PersonnelTracking
             this.btnDeletePositionList = new System.Windows.Forms.Button();
             this.btnClosePositionList = new System.Windows.Forms.Button();
             this.btnUpdatePositionList = new System.Windows.Forms.Button();
-            this.btnAddPositionList = new System.Windows.Forms.Button();
+            this.btnNewPositionList = new System.Windows.Forms.Button();
             this.dgvPositionList = new System.Windows.Forms.DataGridView();
             this.pnlPositionList.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPositionList)).BeginInit();
@@ -45,7 +45,7 @@ namespace PersonnelTracking
             this.pnlPositionList.Controls.Add(this.btnDeletePositionList);
             this.pnlPositionList.Controls.Add(this.btnClosePositionList);
             this.pnlPositionList.Controls.Add(this.btnUpdatePositionList);
-            this.pnlPositionList.Controls.Add(this.btnAddPositionList);
+            this.pnlPositionList.Controls.Add(this.btnNewPositionList);
             this.pnlPositionList.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pnlPositionList.Location = new System.Drawing.Point(0, 353);
             this.pnlPositionList.Name = "pnlPositionList";
@@ -89,17 +89,17 @@ namespace PersonnelTracking
             this.btnUpdatePositionList.Text = "Update";
             this.btnUpdatePositionList.UseVisualStyleBackColor = false;
             // 
-            // btnAddPositionList
+            // btnNewPositionList
             // 
-            this.btnAddPositionList.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnAddPositionList.Font = new System.Drawing.Font("Lato", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddPositionList.ForeColor = System.Drawing.Color.DimGray;
-            this.btnAddPositionList.Location = new System.Drawing.Point(12, 27);
-            this.btnAddPositionList.Name = "btnAddPositionList";
-            this.btnAddPositionList.Size = new System.Drawing.Size(150, 70);
-            this.btnAddPositionList.TabIndex = 0;
-            this.btnAddPositionList.Text = "Add";
-            this.btnAddPositionList.UseVisualStyleBackColor = false;
+            this.btnNewPositionList.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnNewPositionList.Font = new System.Drawing.Font("Lato", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNewPositionList.ForeColor = System.Drawing.Color.DimGray;
+            this.btnNewPositionList.Location = new System.Drawing.Point(12, 27);
+            this.btnNewPositionList.Name = "btnNewPositionList";
+            this.btnNewPositionList.Size = new System.Drawing.Size(150, 70);
+            this.btnNewPositionList.TabIndex = 0;
+            this.btnNewPositionList.Text = "New";
+            this.btnNewPositionList.UseVisualStyleBackColor = false;
             // 
             // dgvPositionList
             // 
@@ -132,7 +132,7 @@ namespace PersonnelTracking
         private System.Windows.Forms.Button btnDeletePositionList;
         private System.Windows.Forms.Button btnClosePositionList;
         private System.Windows.Forms.Button btnUpdatePositionList;
-        private System.Windows.Forms.Button btnAddPositionList;
+        private System.Windows.Forms.Button btnNewPositionList;
         private System.Windows.Forms.DataGridView dgvPositionList;
     }
 }

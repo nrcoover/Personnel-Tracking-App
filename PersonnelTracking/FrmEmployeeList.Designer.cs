@@ -33,7 +33,7 @@ namespace PersonnelTracking
             this.btnDeleteEmployeeList = new System.Windows.Forms.Button();
             this.btnCloseEmployeeList = new System.Windows.Forms.Button();
             this.btnUpdateEmployeeList = new System.Windows.Forms.Button();
-            this.btnAddEmployeeList = new System.Windows.Forms.Button();
+            this.btnNewEmployeeList = new System.Windows.Forms.Button();
             this.dgvEmployeeList = new System.Windows.Forms.DataGridView();
             this.pnlEmployeeListTop = new System.Windows.Forms.Panel();
             this.cmbPositionSelect = new System.Windows.Forms.ComboBox();
@@ -59,7 +59,7 @@ namespace PersonnelTracking
             this.pnlEmployeeList.Controls.Add(this.btnDeleteEmployeeList);
             this.pnlEmployeeList.Controls.Add(this.btnCloseEmployeeList);
             this.pnlEmployeeList.Controls.Add(this.btnUpdateEmployeeList);
-            this.pnlEmployeeList.Controls.Add(this.btnAddEmployeeList);
+            this.pnlEmployeeList.Controls.Add(this.btnNewEmployeeList);
             this.pnlEmployeeList.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pnlEmployeeList.Location = new System.Drawing.Point(0, 473);
             this.pnlEmployeeList.Name = "pnlEmployeeList";
@@ -102,17 +102,17 @@ namespace PersonnelTracking
             this.btnUpdateEmployeeList.Text = "Update";
             this.btnUpdateEmployeeList.UseVisualStyleBackColor = false;
             // 
-            // btnAddEmployeeList
+            // btnNewEmployeeList
             // 
-            this.btnAddEmployeeList.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnAddEmployeeList.Font = new System.Drawing.Font("Lato", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddEmployeeList.ForeColor = System.Drawing.Color.DimGray;
-            this.btnAddEmployeeList.Location = new System.Drawing.Point(12, 27);
-            this.btnAddEmployeeList.Name = "btnAddEmployeeList";
-            this.btnAddEmployeeList.Size = new System.Drawing.Size(150, 70);
-            this.btnAddEmployeeList.TabIndex = 0;
-            this.btnAddEmployeeList.Text = "Add";
-            this.btnAddEmployeeList.UseVisualStyleBackColor = false;
+            this.btnNewEmployeeList.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnNewEmployeeList.Font = new System.Drawing.Font("Lato", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNewEmployeeList.ForeColor = System.Drawing.Color.DimGray;
+            this.btnNewEmployeeList.Location = new System.Drawing.Point(12, 27);
+            this.btnNewEmployeeList.Name = "btnNewEmployeeList";
+            this.btnNewEmployeeList.Size = new System.Drawing.Size(150, 70);
+            this.btnNewEmployeeList.TabIndex = 0;
+            this.btnNewEmployeeList.Text = "New";
+            this.btnNewEmployeeList.UseVisualStyleBackColor = false;
             // 
             // dgvEmployeeList
             // 
@@ -300,7 +300,7 @@ namespace PersonnelTracking
         private System.Windows.Forms.Button btnDeleteEmployeeList;
         private System.Windows.Forms.Button btnCloseEmployeeList;
         private System.Windows.Forms.Button btnUpdateEmployeeList;
-        private System.Windows.Forms.Button btnAddEmployeeList;
+        private System.Windows.Forms.Button btnNewEmployeeList;
         private System.Windows.Forms.DataGridView dgvEmployeeList;
         private System.Windows.Forms.Panel pnlEmployeeListTop;
         private System.Windows.Forms.TextBox txtEmployeeIDSearch;

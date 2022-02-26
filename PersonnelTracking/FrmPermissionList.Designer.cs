@@ -60,7 +60,7 @@ namespace PersonnelTracking
             this.btnDeletePermissionList = new System.Windows.Forms.Button();
             this.btnClosePermissionList = new System.Windows.Forms.Button();
             this.btnUpdatePermissionList = new System.Windows.Forms.Button();
-            this.btnAddPermissionList = new System.Windows.Forms.Button();
+            this.btnNewPermissionList = new System.Windows.Forms.Button();
             this.dgvPermissionList = new System.Windows.Forms.DataGridView();
             this.pnlPermissionListTop.SuspendLayout();
             this.pnlEmployeePermissionList.SuspendLayout();
@@ -363,7 +363,7 @@ namespace PersonnelTracking
             this.pnlPermissionListBottom.Controls.Add(this.btnDeletePermissionList);
             this.pnlPermissionListBottom.Controls.Add(this.btnClosePermissionList);
             this.pnlPermissionListBottom.Controls.Add(this.btnUpdatePermissionList);
-            this.pnlPermissionListBottom.Controls.Add(this.btnAddPermissionList);
+            this.pnlPermissionListBottom.Controls.Add(this.btnNewPermissionList);
             this.pnlPermissionListBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pnlPermissionListBottom.Location = new System.Drawing.Point(0, 499);
             this.pnlPermissionListBottom.Name = "pnlPermissionListBottom";
@@ -431,17 +431,17 @@ namespace PersonnelTracking
             this.btnUpdatePermissionList.Text = "Update";
             this.btnUpdatePermissionList.UseVisualStyleBackColor = false;
             // 
-            // btnAddPermissionList
+            // btnNewPermissionList
             // 
-            this.btnAddPermissionList.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnAddPermissionList.Font = new System.Drawing.Font("Lato", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddPermissionList.ForeColor = System.Drawing.Color.DimGray;
-            this.btnAddPermissionList.Location = new System.Drawing.Point(314, 24);
-            this.btnAddPermissionList.Name = "btnAddPermissionList";
-            this.btnAddPermissionList.Size = new System.Drawing.Size(134, 70);
-            this.btnAddPermissionList.TabIndex = 2;
-            this.btnAddPermissionList.Text = "Add";
-            this.btnAddPermissionList.UseVisualStyleBackColor = false;
+            this.btnNewPermissionList.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnNewPermissionList.Font = new System.Drawing.Font("Lato", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNewPermissionList.ForeColor = System.Drawing.Color.DimGray;
+            this.btnNewPermissionList.Location = new System.Drawing.Point(314, 24);
+            this.btnNewPermissionList.Name = "btnNewPermissionList";
+            this.btnNewPermissionList.Size = new System.Drawing.Size(134, 70);
+            this.btnNewPermissionList.TabIndex = 2;
+            this.btnNewPermissionList.Text = "New";
+            this.btnNewPermissionList.UseVisualStyleBackColor = false;
             // 
             // dgvPermissionList
             // 
@@ -487,7 +487,7 @@ namespace PersonnelTracking
         private System.Windows.Forms.Button btnDeletePermissionList;
         private System.Windows.Forms.Button btnClosePermissionList;
         private System.Windows.Forms.Button btnUpdatePermissionList;
-        private System.Windows.Forms.Button btnAddPermissionList;
+        private System.Windows.Forms.Button btnNewPermissionList;
         private System.Windows.Forms.Panel pnlEmployeePermissionList;
         private System.Windows.Forms.Panel pnlAdminPermissionList;
         private System.Windows.Forms.ComboBox cmbPositionSelect;

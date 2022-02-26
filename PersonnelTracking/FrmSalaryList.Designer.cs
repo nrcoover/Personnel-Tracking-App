@@ -31,6 +31,12 @@ namespace PersonnelTracking
         {
             this.pnlSalaryListMaster = new System.Windows.Forms.Panel();
             this.pnlEmployeeSalaryList = new System.Windows.Forms.Panel();
+            this.btnClearTask = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.rdbLess = new System.Windows.Forms.RadioButton();
+            this.rdbEquals = new System.Windows.Forms.RadioButton();
+            this.rdbMore = new System.Windows.Forms.RadioButton();
+            this.btnSearchTask = new System.Windows.Forms.Button();
             this.cmbSalaryMonth = new System.Windows.Forms.ComboBox();
             this.lblSalaryMonth = new System.Windows.Forms.Label();
             this.txtSalaryYear = new System.Windows.Forms.TextBox();
@@ -52,20 +58,14 @@ namespace PersonnelTracking
             this.btnDeleteSalaryList = new System.Windows.Forms.Button();
             this.btnCloseSalaryList = new System.Windows.Forms.Button();
             this.btnUpdateSalaryList = new System.Windows.Forms.Button();
-            this.btnAddSalaryList = new System.Windows.Forms.Button();
+            this.btnNewSalaryList = new System.Windows.Forms.Button();
             this.dgvSalaryList = new System.Windows.Forms.DataGridView();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.rdbLess = new System.Windows.Forms.RadioButton();
-            this.rdbMore = new System.Windows.Forms.RadioButton();
-            this.rdbEquals = new System.Windows.Forms.RadioButton();
-            this.btnClearTask = new System.Windows.Forms.Button();
-            this.btnSearchTask = new System.Windows.Forms.Button();
             this.pnlSalaryListMaster.SuspendLayout();
             this.pnlEmployeeSalaryList.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.pnlAdminSalaryList.SuspendLayout();
             this.pnlSalaryListBottom.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSalaryList)).BeginInit();
-            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlSalaryListMaster
@@ -95,6 +95,79 @@ namespace PersonnelTracking
             this.pnlEmployeeSalaryList.Name = "pnlEmployeeSalaryList";
             this.pnlEmployeeSalaryList.Size = new System.Drawing.Size(541, 198);
             this.pnlEmployeeSalaryList.TabIndex = 1;
+            // 
+            // btnClearTask
+            // 
+            this.btnClearTask.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnClearTask.Font = new System.Drawing.Font("Lato", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClearTask.ForeColor = System.Drawing.Color.DimGray;
+            this.btnClearTask.Location = new System.Drawing.Point(381, 104);
+            this.btnClearTask.Name = "btnClearTask";
+            this.btnClearTask.Size = new System.Drawing.Size(123, 63);
+            this.btnClearTask.TabIndex = 4;
+            this.btnClearTask.Text = "Clear";
+            this.btnClearTask.UseVisualStyleBackColor = false;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.Color.LightGray;
+            this.groupBox1.Controls.Add(this.rdbLess);
+            this.groupBox1.Controls.Add(this.rdbEquals);
+            this.groupBox1.Controls.Add(this.rdbMore);
+            this.groupBox1.Font = new System.Drawing.Font("Lato", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(177, 66);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(196, 35);
+            this.groupBox1.TabIndex = 29;
+            this.groupBox1.TabStop = false;
+            // 
+            // rdbLess
+            // 
+            this.rdbLess.AutoSize = true;
+            this.rdbLess.ForeColor = System.Drawing.Color.Gray;
+            this.rdbLess.Location = new System.Drawing.Point(72, 12);
+            this.rdbLess.Name = "rdbLess";
+            this.rdbLess.Size = new System.Drawing.Size(52, 21);
+            this.rdbLess.TabIndex = 1;
+            this.rdbLess.TabStop = true;
+            this.rdbLess.Text = "Less";
+            this.rdbLess.UseVisualStyleBackColor = true;
+            // 
+            // rdbEquals
+            // 
+            this.rdbEquals.AutoSize = true;
+            this.rdbEquals.ForeColor = System.Drawing.Color.Gray;
+            this.rdbEquals.Location = new System.Drawing.Point(130, 12);
+            this.rdbEquals.Name = "rdbEquals";
+            this.rdbEquals.Size = new System.Drawing.Size(67, 21);
+            this.rdbEquals.TabIndex = 2;
+            this.rdbEquals.TabStop = true;
+            this.rdbEquals.Text = "Equals";
+            this.rdbEquals.UseVisualStyleBackColor = true;
+            // 
+            // rdbMore
+            // 
+            this.rdbMore.AutoSize = true;
+            this.rdbMore.ForeColor = System.Drawing.Color.Gray;
+            this.rdbMore.Location = new System.Drawing.Point(6, 12);
+            this.rdbMore.Name = "rdbMore";
+            this.rdbMore.Size = new System.Drawing.Size(60, 21);
+            this.rdbMore.TabIndex = 0;
+            this.rdbMore.TabStop = true;
+            this.rdbMore.Text = "More";
+            this.rdbMore.UseVisualStyleBackColor = true;
+            // 
+            // btnSearchTask
+            // 
+            this.btnSearchTask.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnSearchTask.Font = new System.Drawing.Font("Lato", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearchTask.ForeColor = System.Drawing.Color.DimGray;
+            this.btnSearchTask.Location = new System.Drawing.Point(380, 34);
+            this.btnSearchTask.Name = "btnSearchTask";
+            this.btnSearchTask.Size = new System.Drawing.Size(124, 64);
+            this.btnSearchTask.TabIndex = 3;
+            this.btnSearchTask.Text = "Search";
+            this.btnSearchTask.UseVisualStyleBackColor = false;
             // 
             // cmbSalaryMonth
             // 
@@ -288,7 +361,7 @@ namespace PersonnelTracking
             this.pnlSalaryListBottom.Controls.Add(this.btnDeleteSalaryList);
             this.pnlSalaryListBottom.Controls.Add(this.btnCloseSalaryList);
             this.pnlSalaryListBottom.Controls.Add(this.btnUpdateSalaryList);
-            this.pnlSalaryListBottom.Controls.Add(this.btnAddSalaryList);
+            this.pnlSalaryListBottom.Controls.Add(this.btnNewSalaryList);
             this.pnlSalaryListBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pnlSalaryListBottom.Location = new System.Drawing.Point(0, 452);
             this.pnlSalaryListBottom.Name = "pnlSalaryListBottom";
@@ -332,17 +405,17 @@ namespace PersonnelTracking
             this.btnUpdateSalaryList.Text = "Update";
             this.btnUpdateSalaryList.UseVisualStyleBackColor = false;
             // 
-            // btnAddSalaryList
+            // btnNewSalaryList
             // 
-            this.btnAddSalaryList.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnAddSalaryList.Font = new System.Drawing.Font("Lato", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddSalaryList.ForeColor = System.Drawing.Color.DimGray;
-            this.btnAddSalaryList.Location = new System.Drawing.Point(12, 19);
-            this.btnAddSalaryList.Name = "btnAddSalaryList";
-            this.btnAddSalaryList.Size = new System.Drawing.Size(150, 70);
-            this.btnAddSalaryList.TabIndex = 0;
-            this.btnAddSalaryList.Text = "Add";
-            this.btnAddSalaryList.UseVisualStyleBackColor = false;
+            this.btnNewSalaryList.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnNewSalaryList.Font = new System.Drawing.Font("Lato", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNewSalaryList.ForeColor = System.Drawing.Color.DimGray;
+            this.btnNewSalaryList.Location = new System.Drawing.Point(12, 19);
+            this.btnNewSalaryList.Name = "btnNewSalaryList";
+            this.btnNewSalaryList.Size = new System.Drawing.Size(150, 70);
+            this.btnNewSalaryList.TabIndex = 0;
+            this.btnNewSalaryList.Text = "New";
+            this.btnNewSalaryList.UseVisualStyleBackColor = false;
             // 
             // dgvSalaryList
             // 
@@ -352,79 +425,6 @@ namespace PersonnelTracking
             this.dgvSalaryList.Name = "dgvSalaryList";
             this.dgvSalaryList.Size = new System.Drawing.Size(948, 254);
             this.dgvSalaryList.TabIndex = 2;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.BackColor = System.Drawing.Color.LightGray;
-            this.groupBox1.Controls.Add(this.rdbLess);
-            this.groupBox1.Controls.Add(this.rdbEquals);
-            this.groupBox1.Controls.Add(this.rdbMore);
-            this.groupBox1.Font = new System.Drawing.Font("Lato", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(177, 66);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(196, 35);
-            this.groupBox1.TabIndex = 29;
-            this.groupBox1.TabStop = false;
-            // 
-            // rdbLess
-            // 
-            this.rdbLess.AutoSize = true;
-            this.rdbLess.ForeColor = System.Drawing.Color.Gray;
-            this.rdbLess.Location = new System.Drawing.Point(72, 12);
-            this.rdbLess.Name = "rdbLess";
-            this.rdbLess.Size = new System.Drawing.Size(52, 21);
-            this.rdbLess.TabIndex = 1;
-            this.rdbLess.TabStop = true;
-            this.rdbLess.Text = "Less";
-            this.rdbLess.UseVisualStyleBackColor = true;
-            // 
-            // rdbMore
-            // 
-            this.rdbMore.AutoSize = true;
-            this.rdbMore.ForeColor = System.Drawing.Color.Gray;
-            this.rdbMore.Location = new System.Drawing.Point(6, 12);
-            this.rdbMore.Name = "rdbMore";
-            this.rdbMore.Size = new System.Drawing.Size(60, 21);
-            this.rdbMore.TabIndex = 0;
-            this.rdbMore.TabStop = true;
-            this.rdbMore.Text = "More";
-            this.rdbMore.UseVisualStyleBackColor = true;
-            // 
-            // rdbEquals
-            // 
-            this.rdbEquals.AutoSize = true;
-            this.rdbEquals.ForeColor = System.Drawing.Color.Gray;
-            this.rdbEquals.Location = new System.Drawing.Point(130, 12);
-            this.rdbEquals.Name = "rdbEquals";
-            this.rdbEquals.Size = new System.Drawing.Size(67, 21);
-            this.rdbEquals.TabIndex = 2;
-            this.rdbEquals.TabStop = true;
-            this.rdbEquals.Text = "Equals";
-            this.rdbEquals.UseVisualStyleBackColor = true;
-            // 
-            // btnClearTask
-            // 
-            this.btnClearTask.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnClearTask.Font = new System.Drawing.Font("Lato", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClearTask.ForeColor = System.Drawing.Color.DimGray;
-            this.btnClearTask.Location = new System.Drawing.Point(381, 104);
-            this.btnClearTask.Name = "btnClearTask";
-            this.btnClearTask.Size = new System.Drawing.Size(123, 63);
-            this.btnClearTask.TabIndex = 4;
-            this.btnClearTask.Text = "Clear";
-            this.btnClearTask.UseVisualStyleBackColor = false;
-            // 
-            // btnSearchTask
-            // 
-            this.btnSearchTask.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnSearchTask.Font = new System.Drawing.Font("Lato", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearchTask.ForeColor = System.Drawing.Color.DimGray;
-            this.btnSearchTask.Location = new System.Drawing.Point(380, 34);
-            this.btnSearchTask.Name = "btnSearchTask";
-            this.btnSearchTask.Size = new System.Drawing.Size(124, 64);
-            this.btnSearchTask.TabIndex = 3;
-            this.btnSearchTask.Text = "Search";
-            this.btnSearchTask.UseVisualStyleBackColor = false;
             // 
             // FrmSalaryList
             // 
@@ -441,12 +441,12 @@ namespace PersonnelTracking
             this.pnlSalaryListMaster.ResumeLayout(false);
             this.pnlEmployeeSalaryList.ResumeLayout(false);
             this.pnlEmployeeSalaryList.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.pnlAdminSalaryList.ResumeLayout(false);
             this.pnlAdminSalaryList.PerformLayout();
             this.pnlSalaryListBottom.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvSalaryList)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -459,7 +459,7 @@ namespace PersonnelTracking
         private System.Windows.Forms.Button btnDeleteSalaryList;
         private System.Windows.Forms.Button btnCloseSalaryList;
         private System.Windows.Forms.Button btnUpdateSalaryList;
-        private System.Windows.Forms.Button btnAddSalaryList;
+        private System.Windows.Forms.Button btnNewSalaryList;
         private System.Windows.Forms.Panel pnlEmployeeSalaryList;
         private System.Windows.Forms.Panel pnlAdminSalaryList;
         private System.Windows.Forms.ComboBox cmbPositionSelect;
