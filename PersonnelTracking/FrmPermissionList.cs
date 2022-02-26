@@ -27,6 +27,22 @@ namespace PersonnelTracking
             e.Handled = General.isNumber(e);
         }
 
+        private void btnNewPermissionList_Click(object sender, EventArgs e)
+        {
+            FrmPermission frm = new FrmPermission();
+            this.Hide();
+            frm.ShowDialog();
+            this.Visible = true;
+        }
+
+        private void btnUpdatePermissionList_Click(object sender, EventArgs e)
+        {
+            FrmPermission frm = new FrmPermission();
+            this.Hide();
+            frm.ShowDialog();
+            this.Visible = true;
+        }
+
         private void btnClosePermissionList_Click(object sender, EventArgs e)
         {
             this.Close();

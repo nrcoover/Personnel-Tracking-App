@@ -415,6 +415,7 @@ namespace PersonnelTracking
             this.btnUpdateTaskList.TabIndex = 2;
             this.btnUpdateTaskList.Text = "Update";
             this.btnUpdateTaskList.UseVisualStyleBackColor = false;
+            this.btnUpdateTaskList.Click += new System.EventHandler(this.btnUpdateTaskList_Click);
             // 
             // btnNewTaskList
             // 
@@ -427,6 +428,7 @@ namespace PersonnelTracking
             this.btnNewTaskList.TabIndex = 1;
             this.btnNewTaskList.Text = "New";
             this.btnNewTaskList.UseVisualStyleBackColor = false;
+            this.btnNewTaskList.Click += new System.EventHandler(this.btnNewTaskList_Click);
             // 
             // dgvTaskList
             // 

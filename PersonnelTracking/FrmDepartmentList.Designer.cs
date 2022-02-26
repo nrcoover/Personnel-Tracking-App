@@ -97,6 +97,7 @@ namespace PersonnelTracking
             this.btnUpdateDepartmentList.TabIndex = 1;
             this.btnUpdateDepartmentList.Text = "Update";
             this.btnUpdateDepartmentList.UseVisualStyleBackColor = false;
+            this.btnUpdateDepartmentList.Click += new System.EventHandler(this.btnUpdateDepartmentList_Click);
             // 
             // btnNewDepartmentList
             // 
@@ -109,6 +110,7 @@ namespace PersonnelTracking
             this.btnNewDepartmentList.TabIndex = 0;
             this.btnNewDepartmentList.Text = "New";
             this.btnNewDepartmentList.UseVisualStyleBackColor = false;
+            this.btnNewDepartmentList.Click += new System.EventHandler(this.btnNewDepartmentList_Click);
             // 
             // FrmDepartmentList
             // 

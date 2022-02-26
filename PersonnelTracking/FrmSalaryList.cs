@@ -17,6 +17,22 @@ namespace PersonnelTracking
             InitializeComponent();
         }
 
+        private void btnNewSalaryList_Click(object sender, EventArgs e)
+        {
+            FrmSalary frm = new FrmSalary();
+            this.Hide();
+            frm.ShowDialog();
+            this.Visible = true;
+        }
+
+        private void btnUpdateSalaryList_Click(object sender, EventArgs e)
+        {
+            FrmSalary frm = new FrmSalary();
+            this.Hide();
+            frm.ShowDialog();
+            this.Visible = true;
+        }
+
         private void btnCloseSalaryList_Click(object sender, EventArgs e)
         {
             this.Close();

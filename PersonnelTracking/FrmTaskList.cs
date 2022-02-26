@@ -17,19 +17,35 @@ namespace PersonnelTracking
             InitializeComponent();
         }
 
+        private void FrmTaskList_Load(object sender, EventArgs e)
+        {
+            pnlAdminTaskList.Hide();
+        }
+
         private void txtEmployeeIDSearch_KeyPress(object sender, KeyPressEventArgs e)
         {
             e.Handled = General.isNumber(e);
         }
 
+        private void btnNewTaskList_Click(object sender, EventArgs e)
+        {
+            FrmTask frm = new FrmTask();
+            this.Hide();
+            frm.ShowDialog();
+            this.Visible = true;
+        }
+
+        private void btnUpdateTaskList_Click(object sender, EventArgs e)
+        {
+            FrmTask frm = new FrmTask();
+            this.Hide();
+            frm.ShowDialog();
+            this.Visible = true;
+        }
+
         private void btnCloseTaskList_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void FrmTaskList_Load(object sender, EventArgs e)
-        {
-            pnlAdminTaskList.Hide();
         }
     }
 }

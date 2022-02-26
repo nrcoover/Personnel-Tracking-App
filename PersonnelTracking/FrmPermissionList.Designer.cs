@@ -430,6 +430,7 @@ namespace PersonnelTracking
             this.btnUpdatePermissionList.TabIndex = 3;
             this.btnUpdatePermissionList.Text = "Update";
             this.btnUpdatePermissionList.UseVisualStyleBackColor = false;
+            this.btnUpdatePermissionList.Click += new System.EventHandler(this.btnUpdatePermissionList_Click);
             // 
             // btnNewPermissionList
             // 
@@ -442,6 +443,7 @@ namespace PersonnelTracking
             this.btnNewPermissionList.TabIndex = 2;
             this.btnNewPermissionList.Text = "New";
             this.btnNewPermissionList.UseVisualStyleBackColor = false;
+            this.btnNewPermissionList.Click += new System.EventHandler(this.btnNewPermissionList_Click);
             // 
             // dgvPermissionList
             // 

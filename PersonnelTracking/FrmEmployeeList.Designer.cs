@@ -89,6 +89,7 @@ namespace PersonnelTracking
             this.btnCloseEmployeeList.TabIndex = 3;
             this.btnCloseEmployeeList.Text = "Close";
             this.btnCloseEmployeeList.UseVisualStyleBackColor = false;
+            this.btnCloseEmployeeList.Click += new System.EventHandler(this.btnCloseEmployeeList_Click);
             // 
             // btnUpdateEmployeeList
             // 
@@ -101,6 +102,7 @@ namespace PersonnelTracking
             this.btnUpdateEmployeeList.TabIndex = 1;
             this.btnUpdateEmployeeList.Text = "Update";
             this.btnUpdateEmployeeList.UseVisualStyleBackColor = false;
+            this.btnUpdateEmployeeList.Click += new System.EventHandler(this.btnUpdateEmployeeList_Click);
             // 
             // btnNewEmployeeList
             // 
@@ -113,6 +115,7 @@ namespace PersonnelTracking
             this.btnNewEmployeeList.TabIndex = 0;
             this.btnNewEmployeeList.Text = "New";
             this.btnNewEmployeeList.UseVisualStyleBackColor = false;
+            this.btnNewEmployeeList.Click += new System.EventHandler(this.btnNewEmployeeList_Click);
             // 
             // dgvEmployeeList
             // 

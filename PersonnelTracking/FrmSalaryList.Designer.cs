@@ -404,6 +404,7 @@ namespace PersonnelTracking
             this.btnUpdateSalaryList.TabIndex = 1;
             this.btnUpdateSalaryList.Text = "Update";
             this.btnUpdateSalaryList.UseVisualStyleBackColor = false;
+            this.btnUpdateSalaryList.Click += new System.EventHandler(this.btnUpdateSalaryList_Click);
             // 
             // btnNewSalaryList
             // 
@@ -416,6 +417,7 @@ namespace PersonnelTracking
             this.btnNewSalaryList.TabIndex = 0;
             this.btnNewSalaryList.Text = "New";
             this.btnNewSalaryList.UseVisualStyleBackColor = false;
+            this.btnNewSalaryList.Click += new System.EventHandler(this.btnNewSalaryList_Click);
             // 
             // dgvSalaryList
             // 

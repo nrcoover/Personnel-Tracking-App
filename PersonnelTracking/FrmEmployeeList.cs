@@ -21,5 +21,26 @@ namespace PersonnelTracking
         {
             e.Handled = General.isNumber(e);
         }
+
+        private void btnNewEmployeeList_Click(object sender, EventArgs e)
+        {
+            FrmEmployee frm = new FrmEmployee();
+            this.Hide();
+            frm.ShowDialog();
+            this.Visible = true;
+        }
+
+        private void btnUpdateEmployeeList_Click(object sender, EventArgs e)
+        {
+            FrmEmployee frm = new FrmEmployee();
+            this.Hide();
+            frm.ShowDialog();
+            this.Visible = true;
+        }
+
+        private void btnCloseEmployeeList_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

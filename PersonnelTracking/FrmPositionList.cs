@@ -17,6 +17,22 @@ namespace PersonnelTracking
             InitializeComponent();
         }
 
+        private void btnNewPositionList_Click(object sender, EventArgs e)
+        {
+            FrmPosition frm = new FrmPosition();
+            this.Hide();
+            frm.ShowDialog();
+            this.Visible = true;
+        }
+
+        private void btnUpdatePositionList_Click(object sender, EventArgs e)
+        {
+            FrmPosition frm = new FrmPosition();
+            this.Hide();
+            frm.ShowDialog();
+            this.Visible = true;
+        }
+
         private void btnCloseDepartmentList_Click(object sender, EventArgs e)
         {
             this.Close();

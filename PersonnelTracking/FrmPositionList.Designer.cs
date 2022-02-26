@@ -88,6 +88,7 @@ namespace PersonnelTracking
             this.btnUpdatePositionList.TabIndex = 1;
             this.btnUpdatePositionList.Text = "Update";
             this.btnUpdatePositionList.UseVisualStyleBackColor = false;
+            this.btnUpdatePositionList.Click += new System.EventHandler(this.btnUpdatePositionList_Click);
             // 
             // btnNewPositionList
             // 
@@ -100,6 +101,7 @@ namespace PersonnelTracking
             this.btnNewPositionList.TabIndex = 0;
             this.btnNewPositionList.Text = "New";
             this.btnNewPositionList.UseVisualStyleBackColor = false;
+            this.btnNewPositionList.Click += new System.EventHandler(this.btnNewPositionList_Click);
             // 
             // dgvPositionList
             // 
