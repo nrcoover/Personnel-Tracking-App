@@ -29,6 +29,9 @@ namespace PersonnelTracking
         /// </summary>
         private void InitializeComponent()
         {
+            this.btnEmployee = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtIcons8 = new System.Windows.Forms.Label();
             this.btnSalary = new System.Windows.Forms.Button();
             this.btnTasks = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
@@ -36,10 +39,39 @@ namespace PersonnelTracking
             this.btnPosition = new System.Windows.Forms.Button();
             this.btnDepartment = new System.Windows.Forms.Button();
             this.btnPermissions = new System.Windows.Forms.Button();
-            this.btnEmployee = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtIcons8 = new System.Windows.Forms.Label();
             this.SuspendLayout();
+            // 
+            // btnEmployee
+            // 
+            this.btnEmployee.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnEmployee.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnEmployee.Font = new System.Drawing.Font("Lato Light", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEmployee.Image = global::PersonnelTracking.Properties.Resources.icons8_businessman_641;
+            this.btnEmployee.Location = new System.Drawing.Point(31, 33);
+            this.btnEmployee.Name = "btnEmployee";
+            this.btnEmployee.Size = new System.Drawing.Size(139, 125);
+            this.btnEmployee.TabIndex = 0;
+            this.btnEmployee.Text = "Employee";
+            this.btnEmployee.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnEmployee.UseVisualStyleBackColor = false;
+            // 
+            // label1
+            // 
+            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(100, 23);
+            this.label1.TabIndex = 0;
+            // 
+            // txtIcons8
+            // 
+            this.txtIcons8.AutoSize = true;
+            this.txtIcons8.BackColor = System.Drawing.Color.Transparent;
+            this.txtIcons8.ForeColor = System.Drawing.Color.DimGray;
+            this.txtIcons8.Location = new System.Drawing.Point(540, 337);
+            this.txtIcons8.Name = "txtIcons8";
+            this.txtIcons8.Size = new System.Drawing.Size(103, 13);
+            this.txtIcons8.TabIndex = 8;
+            this.txtIcons8.Text = "icons by icons8.com";
             // 
             // btnSalary
             // 
@@ -139,37 +171,6 @@ namespace PersonnelTracking
             this.btnPermissions.Text = "Permissions";
             this.btnPermissions.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnPermissions.UseVisualStyleBackColor = false;
-            // 
-            // btnEmployee
-            // 
-            this.btnEmployee.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnEmployee.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnEmployee.Font = new System.Drawing.Font("Lato Light", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEmployee.Location = new System.Drawing.Point(31, 33);
-            this.btnEmployee.Name = "btnEmployee";
-            this.btnEmployee.Size = new System.Drawing.Size(139, 125);
-            this.btnEmployee.TabIndex = 0;
-            this.btnEmployee.Text = "Employee";
-            this.btnEmployee.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnEmployee.UseVisualStyleBackColor = false;
-            // 
-            // label1
-            // 
-            this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 23);
-            this.label1.TabIndex = 0;
-            // 
-            // txtIcons8
-            // 
-            this.txtIcons8.AutoSize = true;
-            this.txtIcons8.BackColor = System.Drawing.Color.Transparent;
-            this.txtIcons8.ForeColor = System.Drawing.Color.DimGray;
-            this.txtIcons8.Location = new System.Drawing.Point(540, 337);
-            this.txtIcons8.Name = "txtIcons8";
-            this.txtIcons8.Size = new System.Drawing.Size(103, 13);
-            this.txtIcons8.TabIndex = 8;
-            this.txtIcons8.Text = "icons by icons8.com";
             // 
             // FrmMain
             // 
