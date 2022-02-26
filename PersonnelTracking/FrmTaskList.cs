@@ -26,5 +26,10 @@ namespace PersonnelTracking
         {
             this.Close();
         }
+
+        private void FrmTaskList_Load(object sender, EventArgs e)
+        {
+            pnlAdminTaskList.Hide();
+        }
     }
 }
